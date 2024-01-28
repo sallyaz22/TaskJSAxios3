@@ -1,0 +1,48 @@
+أولاً fetch دالة جاهزة في ال 
+javascript بينما axios مكتبة تحتاج لإستدعائها
+
+بالطبع ليس خطأ والفرق بينهما بسيط ويمكن لكلاهما القيام بنفس الشئ والفرق بينهما
+
+fetch لا تدعم IE 11 بينما axios تدعمه
+عند عمل request يجب أن تقوم بتنفيذ الدالة  json() function لل response بينما لا نقوم بذلك في axios
+يجب عليك تحويل ال object ل json في ال fetch بينما لا نقوم بذلك في ال axios
+أعتقد أنه لا يمكنك العمل مع ال service worker لل PWA باستخدام axios فقط fetch
+لذلك يمكنك استخدام كلاهما بدون مشاكل ولكن في التطبيقات الكبيرة ربما تسهل ال axios العمل عن ال fetch
+
+
+Axios
+
+Axios has url in request object.
+Axios is a stand-alone third party package that can be easily installed.
+Axios enjoys built-in XSRF protection.
+Axios uses the data property.
+Axios data contains the object.
+Axios request is ok when status is 200 and statusText is OK.
+Axios performs automatic transforms of JSON data.
+Axios allows cancelling request and request timeout.
+Axios has the ability to intercept HTTP requests.
+Axios has built-in support for download progress.
+Axios has wide browser support.
+Axios “GET” call ignores data content
+
+Fetch 
+
+Fetch is built into most modern browsers
+Fetch has no url in request object.
+Fetch does not.
+Fetch uses the body property.
+Fetch s body has to be stringified.
+Fetch request is ok when response object contains the ok property.
+Fetch is a two-step process when handling JSON data- first, to make the actual request
+Fetch does not.
+Fetch, by default, doesnt provide a way to intercept requests.
+Fetch does not support upload progress.
+Fetch only supports Chrome 42+, Firefox 39+, Edge 14+, and Safari 10.1+ (This is known as Backward Compatibility).
+Fetch “GET” call can have body content
+
+
+
+
+
+
+
